@@ -1,0 +1,13 @@
+﻿substitutions:
+  device_name: switch-aquarium
+  friendly_name: Aquarium
+  restore_mode: RESTORE_DEFAULT_ON
+
+packages:
+  remote_package:
+    url: https://github.com/mnigbur/esphome-packages
+    refresh: 0d
+    files: [
+      common/homeassistant.yaml,
+      hardware/teckin_sp22.yaml
+    ]
