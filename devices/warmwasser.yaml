@@ -1,5 +1,5 @@
 ﻿substitutions:
-  device_name: sp22_2
+  device_name: sp22-2
   friendly_name: Warmwasser
   restore_mode: RESTORE_DEFAULT_ON
 
