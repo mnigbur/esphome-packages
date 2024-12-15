@@ -76,7 +76,7 @@ sensor:
 binary_sensor:
   # Binary sensor for the button press
   - platform: gpio
-    name: ${friendly_name} button
+    name: Button
     pin:
       number: GPIO01
       inverted: true
