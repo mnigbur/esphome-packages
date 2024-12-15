@@ -2,7 +2,7 @@
   ssid: !secret wifi_ssid
   password: !secret wifi_password
   ap:
-    ssid: ${device_name} Fallback Hotspot
+    ssid: ${friendly_name} Fallback Hotspot
     password: !secret wifi_password
 
 # Enables captive portal in fallback mode.
