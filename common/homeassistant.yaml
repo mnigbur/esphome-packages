@@ -1,0 +1,11 @@
+﻿packages:
+  restart: !include default.yaml
+
+# Enable Home Assistant API
+api:
+  reboot_timeout: 60min
+
+# Sync time with Home Assistant
+time:
+  - platform: homeassistant
+    id: homeassistant_time

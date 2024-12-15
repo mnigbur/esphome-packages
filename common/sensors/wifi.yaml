@@ -1,0 +1,16 @@
+﻿text_sensor:
+  - platform: wifi_info
+    ip_address:
+      name: IP
+      icon: mdi:ip-network
+    mac_address:
+      name: MAC
+      icon: mdi:ip-network
+    ssid:
+      name: SSID
+      icon: mdi:wifi
+
+sensor:
+  - platform: wifi_signal
+    name: RSSI
+    update_interval: 60s

@@ -1,0 +1,13 @@
+﻿substitutions:
+  device_name: sp22_2
+  friendly_name: Warmwasser
+  restore_mode: RESTORE_DEFAULT_ON
+
+packages:
+  remote_package:
+    url: https://github.com/mnigbur/esphome-packages
+    refresh: 0d
+    files: [
+      common/homeassistant.yaml,
+      hardware/teckin_sp22.yaml
+    ]

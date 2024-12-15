@@ -1,0 +1,24 @@
+﻿packages:
+  restart: !include buttons/restart.yaml
+  safe-mode: !include buttons/safe-mode.yaml
+  uptime: !include sensors/uptime.yaml
+  version: !include sensors/version.yaml
+  wifi_sensor: !include sensors/wifi.yaml
+  wifi: !include wifi.yaml
+
+esphome:
+  name: ${device_name}
+  friendly_name: ${friendly_name}
+
+# Enable logging
+logger:
+
+# Enable Web server
+web_server:
+  port: 80
+
+# Enable over-the-air updates
+ota:
+  - platform: esphome
+    id: my_ota
+    password: !secret esphome_ota_password
